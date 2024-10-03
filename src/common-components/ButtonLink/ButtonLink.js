@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
-  Colors,
-  Spaces,
-  FontLetterSpacings,
-  FontFamilies,
-  FontWeights,
-  FontSizes,
-} from "../../shared/DesignTokens";
+	Colors,
+	Spaces,
+	FontLetterSpacings,
+	FontFamilies,
+	FontWeights,
+	FontSizes,
+} from '../../shared/DesignTokens';
 
 export const ButtonLink = styled.a`
 	display: inline-flex;
@@ -19,7 +19,7 @@ export const ButtonLink = styled.a`
 	height: 40px;
 	font-family: ${FontFamilies.PRIMARY};
 	font-weight: ${FontWeights.REGULAR};
-	color: ${Colors.BLUE_500};
+	color: ${Colors.PURPLE_500};
 	padding: ${Spaces.ONE} ${Spaces.TWO};
 	cursor: pointer;
 	transition: 200ms all ease;

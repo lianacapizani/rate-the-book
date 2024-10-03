@@ -1,7 +1,7 @@
 export const Colors = {
   NEUTRAL_WHITE: "#FFFFFF",
   NEUTRAL_BLACK: "#000000",
-  PURPLE_500: "##731382",
+  PURPLE_500: "#731382",
   PURPLE_550: "#591763",
   RED_800: "#BA0F00",
   GREEN_800: "##1A6C16",
@@ -9,6 +9,7 @@ export const Colors = {
   GRAY_400: "#B7B7B7",
   GRAY_600: "#6C6C6C",
   GRAY_700: "#7B7B7B",
+  BLUE_800: "#01213B"
 };
 
 export const FontFamilies = {
