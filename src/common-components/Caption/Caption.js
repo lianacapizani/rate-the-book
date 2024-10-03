@@ -5,6 +5,7 @@ import {
   FontLineHeights,
   FontSizes,
   FontWeights,
+  FontLetterSpacings,
 } from "../../shared/DesignTokens";
 
 export const Caption = styled.span`

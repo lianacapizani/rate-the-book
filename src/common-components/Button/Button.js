@@ -7,6 +7,7 @@ import {
   FontLetterSpacings,
   FontFamilies,
   FontWeights,
+  FontSizes,
 } from "../../shared/DesignTokens";
 
 export const Button = styled.button`
@@ -27,7 +28,7 @@ export const Button = styled.button`
 	text-transform: uppercase;
     letter-spacing: ${FontLetterSpacings.MEDIUM};
 	font-size: ${FontSizes.ONE_QUARTER};
- 
+
 	&amp;:hover {
 		background-color: ${Colors.PURPLE_550};
 	}
