@@ -18,7 +18,7 @@ export const Button = styled.button`
 	font-family: ${FontFamilies.PRIMARY};
 	font-weight: ${FontWeights.BOLD};
 	background-color: ${(props) =>
-		props.ghost ? Colors.GRAY_700 : Colors.PURPLE_500_500};
+		props.ghost ? Colors.GRAY_700 : Colors.PURPLE_500};
 	color: ${Colors.NEUTRAL_WHITE};
 	box-shadow: ${Shadows.ONE};
 	border-radius: ${BorderRadiuses.ONE};

@@ -20,7 +20,7 @@ export const ButtonLink = styled.a`
 	font-family: ${FontFamilies.PRIMARY};
 	font-weight: ${FontWeights.REGULAR};
 	color: ${Colors.PURPLE_500};
-	padding: ${Spaces.ONE} ${Spaces.TWO};
+	padding: ${Spaces.ONE_HALF} ${Spaces.TWO};
 	cursor: pointer;
 	transition: 200ms all ease;
 	text-transform: uppercase;

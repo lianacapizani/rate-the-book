@@ -1,4 +1,43 @@
+import { Flex, Box } from "@chakra-ui/react";
+import styled from "styled-components";
+import { Button } from "../common-components/Button/Button";
+import { SearchField } from "../common-components/SearchField/SearchField";
+import { BookCard } from "../components/BookCard/BookCard";
+import { Spaces } from "../shared/DesignTokens";
 
+const BooksGrid = styled(Box)`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: ${Spaces.ONE_HALF};
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: ${Spaces.TWO};
+  }
+`;
 export function Search() {
-  return <div />;
+  return (
+    <>
+      <Flex
+        width={["100%", "600px"]}
+        mx={[Spaces.NONE, "auto"]}
+        mt={[Spaces.THREE, Spaces.FIVE]}
+        px={[Spaces.ONE, Spaces.NONE]}
+        mb={[Spaces.TWO, Spaces.FOUR]}
+      >
+        <Box flexGrow="1">
+          <SearchField placeholder="Digite um nome de herói ou heroína" />
+        </Box>
+        <Box ml={Spaces.TWO}>
+          <Button>Buscar</Button>
+        </Box>
+      </Flex>
+      <BooksGrid px={[Spaces.ONE, Spaces.TWO]} pb={[Spaces.ONE, Spaces.TWO]}>
+        <BookCard />
+        <BookCard />
+        <BookCard />
+        <BookCard />
+        <BookCard />
+      </BooksGrid>
+    </>
+  );
 }

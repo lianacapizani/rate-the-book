@@ -10,12 +10,12 @@ export function App() {
     <>
       <NormalizeStyles />
       <BrowserRouter>
-      <Header/>
-        <Routes>
-          <Route path="/detalhes/:id" element={ <Details/> }/>
-          <Route path="/" element={ <Search/> } />
-          <Route path="*" element={ <NotFound/> } />
-        </Routes>
+        <Header/>
+          <Routes>
+            <Route path="/detalhes/:id" element={ <Details/> }/>
+            <Route path="/" element={ <Search/> } />
+            <Route path="*" element={ <NotFound/> } />
+          </Routes>
       </BrowserRouter>
     </>
   );

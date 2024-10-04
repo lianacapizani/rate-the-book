@@ -10,7 +10,7 @@ import {
 export const HeadingTwo = styled.h2`
 	font-family: ${FontFamilies.PRIMARY};
 	font-weight: ${FontWeights.BOLD};
-	line-height: ${FontLineHeights.MEDIUM};
+	line-height: ${FontLineHeights.SMALL};
 	font-size: ${FontSizes.THREE};
 	color: ${(props) => props.color};
 	margin: 0;

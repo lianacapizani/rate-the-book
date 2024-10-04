@@ -19,6 +19,7 @@ export const Caption = styled.span`
   text-transform: uppercase;
   letter-spacing: ${FontLetterSpacings.MEDIUM};
 `;
+
 Caption.defaultProps = {
   color: Colors.NEUTRAL_BLACK,
 };
