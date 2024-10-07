@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Box } from "@chakra-ui/react";
 import { Card } from "../../common-components/Card/Card";
 import { Caption } from "../../common-components/Caption/Caption";
@@ -11,6 +12,7 @@ import {
   Shadows,
   Spaces,
 } from "../../shared/DesignTokens";
+
 const InformationGrid = styled(Box)`
   display: grid;
   grid-template-columns: 1fr 70px;
@@ -26,28 +28,32 @@ const BookAvatar = styled.div`
   background-size: cover;
   background-position: center;
 `;
-export function BookCard() {
+export function BookCard({ title, author, genre, image, id, link }) {
   return (
     <Card>
-      <InformationGrid p={Spaces.TWO} mb={Spaces.ONE_HALF}>
+      <InformationGrid p={Spaces.TWO} mb={Spaces.NONE}>
         <Box>
           <Caption as="div" color={Colors.GRAY_600}>
-            Emily Brontë
+            {author}
           </Caption>
           <Box mb={Spaces.ONE}>
-            <HeadingTwo>O Morro dos Ventos Uivantes</HeadingTwo>
+            <HeadingTwo> {title} </HeadingTwo>
           </Box>
           <Description as="div" color={Colors.GRAY_700}>
-            <strong>Gênero:</strong> Romance Gótico
+            <strong>Gênero:</strong> {genre}
           </Description>
           <Description as="div" color={Colors.GRAY_700}>
             <strong>Nota atual:</strong> 5
           </Description>
         </Box>
-        <BookAvatar src="https://m.media-amazon.com/images/I/81LIVAOaZHL._AC_UF1000,1000_QL80_.jpg" />
+        <BookAvatar src={image} />
       </InformationGrid>
       <Box width="87px">
-        <ButtonLink>Ver Mais</ButtonLink>
+        <Link to={link}>
+          <ButtonLink>
+            {/* to={`/detalhes/${id}`}  */}
+            Ver Mais</ButtonLink>
+          </Link>
       </Box>
     </Card>
   );

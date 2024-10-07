@@ -14,7 +14,7 @@ export const HeadingTwo = styled.h2`
 	font-size: ${FontSizes.THREE};
 	color: ${(props) => props.color};
 	margin: 0;
-	padding: 0;
+	padding: 8px 0;
 `;
 
 HeadingTwo.defaultProps = {

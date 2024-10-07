@@ -16,11 +16,11 @@ export const ButtonLink = styled.a`
 	outline: none;
 	background: none;
 	width: 100%;
-	height: 40px;
+	height: 10px;
 	font-family: ${FontFamilies.PRIMARY};
 	font-weight: ${FontWeights.REGULAR};
 	color: ${Colors.PURPLE_500};
-	padding: ${Spaces.ONE_HALF} ${Spaces.TWO};
+	padding: ${Spaces.TWO} ${Spaces.ONE};
 	cursor: pointer;
 	transition: 200ms all ease;
 	text-transform: uppercase;
