@@ -1,4 +1,3 @@
-import React from "react";
 import { Flex, Box } from "@chakra-ui/react";
 import styled from "styled-components";
 import { Button } from "../common-components/Button/Button";
@@ -16,48 +15,6 @@ const BooksGrid = styled(Box)`
   }
 `;
 export function Search() {
-  const initialState = [
-    {
-      title: "A Origem",
-      author: "Dan Brown",
-      genre: "Ficção Cientifica",
-      image:
-        "https://m.media-amazon.com/images/I/81T3VDYJbGL._AC_UF1000,1000_QL80_.jpg",
-      rating: 5,
-    },
-    {
-      title: "A Divina Comédia",
-      author: "Miguel de Cervantes",
-      genre: "Poesia Narrativa",
-      image:
-        "https://images.tcdn.com.br/img/img_prod/1271663/a_divina_comedia_capa_dura_461_1_a8c6822358c10562cd9f7c0840cf0653.jpg",
-      rating: 3,
-    },
-    {
-      title: "O Senhor dos Anéis",
-      author: "J.R.R. Tolkien",
-      genre: "Ficção Científica",
-      image:
-        "https://m.media-amazon.com/images/I/81r532V38JL._AC_UL640_QL80_.jpg",
-      rating: 4,
-    },
-    {
-      title: "As Crônicas de Nárnia",
-      author: "C.S. Lewis",
-      genre: "Fantasia",
-      image: "https://m.media-amazon.com/images/I/71yJLhQekBL._AC_UF1000,1000_QL80_.jpg",
-      rating: 4,
-    },
-    {
-      title: "O Morro dos Ventos Uivantes",
-      author: "Emily Brontë",
-      image: "https://m.media-amazon.com/images/I/81LIVAOaZHL._AC_UF1000,1000_QL80_.jpg",
-      rating: 4,
-    }
-  ];
-
-  const [books, setBooks] = React.useState(initialState);
-
   return (
     <>
       <Flex
@@ -74,23 +31,7 @@ export function Search() {
           <Button>Buscar</Button>
         </Box>
       </Flex>
-      <BooksGrid 
-        px={[Spaces.ONE, Spaces.TWO]} 
-        pb={[Spaces.ONE, Spaces.TWO]}
-        >
-          {books.map((book) => (
-            <BookCard
-              key={book.title}
-              title={book.title}
-              author={book.author}
-              genre={book.genre}
-              image={book.image}
-              rating={book.rating}
-              link={book.link}
-            />
-          ))}
-        </BooksGrid>
-{/*           
+      <BooksGrid px={[Spaces.ONE, Spaces.TWO]} pb={[Spaces.ONE, Spaces.TWO]}>
         <BookCard
           title="A Origem"
           author="Dan Brown"
@@ -126,7 +67,7 @@ export function Search() {
           image="https://m.media-amazon.com/images/I/81LIVAOaZHL._AC_UF1000,1000_QL80_.jpg"
           rating={4}
         />
-      </BooksGrid> */}
+      </BooksGrid>
     </>
   );
 }

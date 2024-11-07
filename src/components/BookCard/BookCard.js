@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Box } from "@chakra-ui/react";
 import { Card } from "../../common-components/Card/Card";
 import { Caption } from "../../common-components/Caption/Caption";
@@ -27,7 +28,7 @@ const BookAvatar = styled.div`
   background-size: cover;
   background-position: center;
 `;
-export function BookCard({ title, author, genre, image, id}) {
+export function BookCard({ title, author, genre, image, id, link }) {
   return (
     <Card>
       <InformationGrid p={Spaces.TWO} mb={Spaces.NONE}>
@@ -48,9 +49,11 @@ export function BookCard({ title, author, genre, image, id}) {
         <BookAvatar src={image} />
       </InformationGrid>
       <Box width="87px">
+        <Link to={link}>
           <ButtonLink>
-            to={`/detalhes/${id}`} 
+            {/* to={`/detalhes/${id}`}  */}
             Ver Mais</ButtonLink>
+          </Link>
       </Box>
     </Card>
   );
