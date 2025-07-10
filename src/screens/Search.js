@@ -25,7 +25,7 @@ export function Search() {
         mb={[Spaces.TWO, Spaces.FOUR]}
       >
         <Box flexGrow="1">
-          <SearchField placeholder="Digite um nome de herói ou heroína" />
+          <SearchField placeholder="Digite um nome de livro ou autor(a)..." />
         </Box>
         <Box ml={Spaces.TWO}>
           <Button>Buscar</Button>
